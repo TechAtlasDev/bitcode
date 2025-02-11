@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "bitcode"
+version = "0.1.0"
+description = ""
+authors = ["techatlasdev <srgoqui@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+python-binance = "^1.0.25"
+pandas = "^2.2.3"
+matplotlib = "^3.10.0"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.scripts]
+ticker = "bitcode:getTicker"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
